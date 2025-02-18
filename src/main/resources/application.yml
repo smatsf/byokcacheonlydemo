@@ -34,3 +34,9 @@ server:
 springdoc:
    api-dcos:
    path: /api-docs 
+spring.ssl.bundle.pem:
+  demo:
+    reload-on-update: true
+    keystore:    
+      certificate: "certs/demo.crt"
+      private-key: "certs/demo.key"

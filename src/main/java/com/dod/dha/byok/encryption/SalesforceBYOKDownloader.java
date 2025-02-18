@@ -1,4 +1,4 @@
-package com.dod.dha.byok;
+package com.dod.dha.byok.encryption;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
@@ -15,17 +15,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 public class SalesforceBYOKDownloader {
     @Value("${spring.security.oauth2.client.provider.salesforce.authorization-uri}")
-    private static final String SALESFORCE_AUTH_URL = "https://login.salesforce.com/services/oauth2/token";
+    private   String SALESFORCE_AUTH_URL = "https://login.salesforce.com/services/oauth2/token";
     @Value("${spring.security.oauth2.client.provider.salesforce.token-uri}")
-    private static final String SALESFORCE_API_URL = "https://your-instance.salesforce.com/services/data/v57.0/sobjects/KeyManagement/your-key-id";
+    private String SALESFORCE_API_URL = "https://your-instance.salesforce.com/services/data/v57.0/sobjects/KeyManagement/your-key-id";
     @Value("${spring.security.oauth2.client.registration.salesforce.client-id}")
-    private static final String CLIENT_ID ="";
+    private String CLIENT_ID ="";
 
     @Value("${spring.security.oauth2.client.registration.salesforce.client-secret}")
-    private static final String CLIENT_SECRET ="";
+    private String CLIENT_SECRET ="";
     private static final String USERNAME = "sanjeev.mehrotra@salesforce.com";
     private static final String PASSWORD = "P@ssme54321!";
-
+/*
     public static void main(String[] args) {
         try {
             String accessToken = getSalesforceAccessToken();
@@ -35,17 +35,18 @@ public class SalesforceBYOKDownloader {
             e.printStackTrace();
         }
     }
+*/
 	 @GetMapping("/getToken")
-    private static String getSalesforceAccessToken() throws Exception {
+    private String getSalesforceAccessToken() throws Exception {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
-            HttpPost request = new HttpPost(SALESFORCE_AUTH_URL);
+            HttpPost request = new HttpPost(this.SALESFORCE_AUTH_URL);
             request.setHeader("Content-Type", "application/x-www-form-urlencoded");
 
             String requestBody = "grant_type=password"
-                    + "&client_id=" + CLIENT_ID
-                    + "&client_secret=" + CLIENT_SECRET
-                + "&username=" + USERNAME
-                    + "&password=" + PASSWORD;
+                    + "&client_id=" + this.CLIENT_ID
+                    + "&client_secret=" + this.CLIENT_SECRET
+                + "&username=" + this.USERNAME
+                    + "&password=" + this.PASSWORD;
 
             request.setEntity(new StringEntity(requestBody));
 
@@ -64,9 +65,9 @@ public class SalesforceBYOKDownloader {
         }
     }
    @GetMapping("/downloadCertificate")
-    private static String downloadBYOKCertificate(String accessToken) throws Exception {
+    private String downloadBYOKCertificate(String accessToken) throws Exception {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
-            HttpGet request = new HttpGet(SALESFORCE_API_URL);
+            HttpGet request = new HttpGet(this.SALESFORCE_API_URL);
             request.setHeader("Authorization", "Bearer " + accessToken);
             request.setHeader("Content-Type", "application/json");
 
