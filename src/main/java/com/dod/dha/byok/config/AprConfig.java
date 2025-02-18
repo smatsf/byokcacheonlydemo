@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AprConfig {
-/*
+
   @Bean
   public ServletWebServerFactory servletContainer() {
     TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory() {
@@ -30,5 +30,5 @@ public class AprConfig {
 
     factory.addContextLifecycleListeners(aprLifecycleListener);
     return factory;
-  }*/
+  }
 }
