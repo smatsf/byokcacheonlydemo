@@ -1,6 +1,0 @@
-/home/ec2-user/verify/byok/src/test/java/com/dod/dha/byok/BYOKControllerTest.java
-/home/ec2-user/verify/byok/src/test/java/com/dod/dha/byok/ByokApplicationTests.java
-/home/ec2-user/verify/byok/src/test/java/com/dod/dha/byok/FipsAesCbcTest.java
-/home/ec2-user/verify/byok/src/test/java/com/dod/dha/byok/FipsTest.java
-/home/ec2-user/verify/byok/src/test/java/com/dod/dha/byok/FipsTestAlt.java
-/home/ec2-user/verify/byok/src/test/java/com/dod/dha/byok/UnlimitedCryptoPoliciesCheckTest.java
