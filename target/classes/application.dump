@@ -1,0 +1,23 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: your_redis_password
+  security:
+    oauth2:
+      client:
+        registration:
+          salesforce:
+            client-id: Ov23liJuN6b6V3ufArlW
+            client-secret: 1622a4e8d03d5837538e845146777274b91f121b
+            scope: openid
+            authorization-grant-type: client_credentials
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          salesforce:
+            authorization-uri: https://login.salesforce.com/services/oauth2/authorize
+            token-uri: https://login.salesforce.com/services/oauth2/token
+kms:
+  provider: AWS # or any other KMS service
+  key-id: your_kms_key_id
+

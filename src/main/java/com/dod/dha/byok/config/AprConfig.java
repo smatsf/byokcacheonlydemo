@@ -21,14 +21,12 @@ public class AprConfig {
 
     // enable APR:
     factory.setProtocol("org.apache.coyote.http11.Http11NioProtocol");
-    //factory.setProtocol("org.apache.coyote.http11.Http11AprProtocol");
 
     AprLifecycleListener aprLifecycleListener = new AprLifecycleListener();
 
     // will throw "FIPS was not available to tcnative at build time. You will need to re-build tcnative against an OpenSSL with FIPS." with default OpenSSL:
     aprLifecycleListener.setFIPSMode("on");
 
-    factory.addContextLifecycleListeners(aprLifecycleListener);
     return factory;
   }
 }
