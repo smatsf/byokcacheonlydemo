@@ -1,5 +1,4 @@
 package com.dod.dha.byok.config;
-import org.springframework.context.annotation.Bean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -10,12 +9,12 @@ public class WebConfig implements WebMvcConfigurer {
     @Autowired
     private RequestInterceptor requestInterceptor;
 //    @Autowired
-//    private NonceInterceptor nonceInterceptor;
+    private NonceInterceptor nonceInterceptor;
 
     @Override
-    public void addInterceptors(InterceptorRegistry registry) {
+    public void addInterceptors(@SuppressWarnings("null") InterceptorRegistry registry) {
         registry.addInterceptor(requestInterceptor);
-  //      registry.addInterceptor(nonceInterceptor).addPathPatterns("/**"); // Apply to all endpoints
+        registry.addInterceptor(nonceInterceptor).addPathPatterns("/**"); // Apply to all endpoints
     }
 
 }

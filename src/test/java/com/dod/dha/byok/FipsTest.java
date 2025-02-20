@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.dod.dha.byok.shield.platformencryption.*;
-import com.dod.dha.byok.encryption.*;
 import javax.crypto.SecretKey;
 import java.security.*;
 @SpringBootTest
@@ -13,7 +12,7 @@ public class FipsTest {
     public  void Test1() throws Exception {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         byte[] hash = md.digest("test".getBytes("UTF-8"));
-        System.out.println(javax.xml.bind.DatatypeConverter.printHexBinary(hash));
+        System.out.println(jakarta.xml.bind.DatatypeConverter.printHexBinary(hash));
     }
     @Test
     public  void Test2() throws Exception {
@@ -25,15 +24,15 @@ public class FipsTest {
         PublicKey publicKey =kgen.loadPublicKeyFromCert("keystore.jks","password","x509");
 
         // Encrypt the AES key using RSA with SHA-1 OAEP padding
-        //String encryptedKeySHA1 = kgen.encryptKey(secretKey, publicKey, "SHA-1");
-/*        String encryptedKeySHA1 = kgen.encryptKey(secretKey, publicKey, "SHA-256");
+        String encryptedKeySHA1 = kgen.encryptKey(secretKey, publicKey, "SHA-1");      
+        // String encryptedKeySHA1 = kgen.encryptKey(secretKey, publicKey, "SHA-256");
 
         // Encrypt the AES key using RSA with SHA-512 OAEP padding
         String encryptedKeySHA512 = kgen.encryptKey(secretKey, publicKey, "SHA-512");
 
         System.out.println("Encrypted Key (SHA-1 OAEP): " + encryptedKeySHA1);
         System.out.println("Encrypted Key (SHA-512 OAEP): " + encryptedKeySHA512);
-  */  }
+   }
 
 }
 

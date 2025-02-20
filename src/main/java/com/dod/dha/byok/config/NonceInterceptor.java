@@ -5,8 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.server.ResponseStatusException;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class NonceInterceptor implements HandlerInterceptor {
 
@@ -15,8 +15,10 @@ public class NonceInterceptor implements HandlerInterceptor {
 
     private static final String NONCE_CACHE = "nonces";
 
-/*    @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response) throws Exception {
+ 
+    @SuppressWarnings("null")
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // Retrieve the nonce from the request header
         String nonce = request.getHeader("X-Nonce");
 
@@ -33,6 +35,6 @@ public class NonceInterceptor implements HandlerInterceptor {
         cacheManager.getCache(NONCE_CACHE).put(nonce, true);
         return true;
     }
-*/
+
 }
 

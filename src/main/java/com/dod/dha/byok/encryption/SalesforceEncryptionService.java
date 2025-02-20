@@ -1,4 +1,4 @@
-package org.dod.dha.byok.ecryption;
+package com.dod.dha.byok.encryption;
 import software.amazon.awssdk.services.kms.KmsClient;
 import software.amazon.awssdk.services.kms.model.*;
 import org.apache.commons.codec.binary.Base64;
@@ -6,8 +6,6 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import javax.crypto.Cipher;
 import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.security.spec.X509EncodedKeySpec;
 //import java.util.Base64;

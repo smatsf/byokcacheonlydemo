@@ -23,34 +23,35 @@ public class SalesforceBYOKDownloader {
 
     @Value("${spring.security.oauth2.client.registration.salesforce.client-secret}")
     private String CLIENT_SECRET ="";
-    private static final String USERNAME = "sanjeev.mehrotra@salesforce.com";
-    private static final String PASSWORD = "P@ssme54321!";
-/*
-    public static void main(String[] args) {
-        try {
-            String accessToken = getSalesforceAccessToken();
-            String byokCertificate = downloadBYOKCertificate(accessToken);
-            System.out.println("BYOK Certificate (Base64): " + byokCertificate);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-*/
-	 @GetMapping("/getToken")
-    private String getSalesforceAccessToken() throws Exception {
-        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
-            HttpPost request = new HttpPost(this.SALESFORCE_AUTH_URL);
-            request.setHeader("Content-Type", "application/x-www-form-urlencoded");
-
-            String requestBody = "grant_type=password"
-                    + "&client_id=" + this.CLIENT_ID
-                    + "&client_secret=" + this.CLIENT_SECRET
-                + "&username=" + this.USERNAME
-                    + "&password=" + this.PASSWORD;
+    private final String USERNAME = "sanjeev.mehrotra@salesforce.com";
+        private final String PASSWORD = "P@ssme54321!";
+            /*
+                public static void main(String[] args) {
+                    try {
+                        String accessToken = getSalesforceAccessToken();
+                        String byokCertificate = downloadBYOKCertificate(accessToken);
+                        System.out.println("BYOK Certificate (Base64): " + byokCertificate);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            */
+                 @GetMapping("/getToken")
+                private String getSalesforceAccessToken() throws Exception {
+                    try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+                        HttpPost request = new HttpPost(this.SALESFORCE_AUTH_URL);
+                        request.setHeader("Content-Type", "application/x-www-form-urlencoded");
+            
+                        String requestBody = "grant_type=password"
+                                + "&client_id=" + this.CLIENT_ID
+                                + "&client_secret=" + this.CLIENT_SECRET
+                            + "&username=" + this.USERNAME
+                            + "&password=" + this.PASSWORD;
 
             request.setEntity(new StringEntity(requestBody));
 
-            try (CloseableHttpResponse response = httpClient.execute(request);
+            try (@SuppressWarnings("deprecation")
+            CloseableHttpResponse response = httpClient.execute(request);
                  BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()))) {
 
                 StringBuilder responseString = new StringBuilder();
@@ -71,7 +72,8 @@ public class SalesforceBYOKDownloader {
             request.setHeader("Authorization", "Bearer " + accessToken);
             request.setHeader("Content-Type", "application/json");
 
-            try (CloseableHttpResponse response = httpClient.execute(request);
+            try (@SuppressWarnings("deprecation")
+            CloseableHttpResponse response = httpClient.execute(request);
                  BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()))) {
 
                 StringBuilder responseString = new StringBuilder();
