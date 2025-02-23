@@ -22,7 +22,7 @@ public class FipsTest {
 
         // Load RSA public key from a certificate file
         PublicKey publicKey =kgen.loadPublicKeyFromCert("keystore.jks","password","x509");
-
+        if(publicKey!=null){
         // Encrypt the AES key using RSA with SHA-1 OAEP padding
         String encryptedKeySHA1 = kgen.encryptKey(secretKey, publicKey, "SHA-1");      
         // String encryptedKeySHA1 = kgen.encryptKey(secretKey, publicKey, "SHA-256");
@@ -32,6 +32,7 @@ public class FipsTest {
 
         System.out.println("Encrypted Key (SHA-1 OAEP): " + encryptedKeySHA1);
         System.out.println("Encrypted Key (SHA-512 OAEP): " + encryptedKeySHA512);
+       }
    }
 
 }

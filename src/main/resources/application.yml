@@ -18,7 +18,7 @@ spring:
   data.redis.port: 6379
 kms:
   provider: AWS # or any other KMS service
-  key-id: your_kms_key_id
+  key-id: 02100112-2443-4e6b-bf39-ecd539f1856c #your_kms_key_id
 management:
   endpoints:
     web:
@@ -43,13 +43,16 @@ logging:
   logback:
     rollingpolicy:
       max-file-size: 10MB
-      file-name-pattern: /logs/archived/application-%d{yyyy-MM-dd}.%i.log
+      file-name-pattern: $HOME/logs/archived/application-%d{yyyy-MM-dd}.%i.log
       max-history: 30
   file:
-   name: /logs/application.log
+   name: $HOME/logs/application.log
   pattern:
     console: "%black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable"
     file: "%d %-5level [%thread] %logger : %msg%n"
     level: "%5p"
   level:
-    root: DEBUG
+    root: INFO
+    org.springframework.web: DEBUG
+    com.dod.dha.byok: DEBUG
+    org.hibernate: DEBUG

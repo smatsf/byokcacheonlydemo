@@ -16,7 +16,7 @@ public class NonceInterceptor implements HandlerInterceptor {
     private static final String NONCE_CACHE = "nonces";
 
  
-    @SuppressWarnings("null")
+/*    @SuppressWarnings("null")
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // Retrieve the nonce from the request header
@@ -35,6 +35,6 @@ public class NonceInterceptor implements HandlerInterceptor {
         cacheManager.getCache(NONCE_CACHE).put(nonce, true);
         return true;
     }
-
+*/
 }
 

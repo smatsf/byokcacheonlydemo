@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.3</version>
+        <version>3.4.2</version>
 
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-kms</artifactId>
-            <version>1.12.241</version>  <!-- Check for the latest version -->
+            <version>1.12.782</version>  <!-- Check for the latest version -->
         </dependency>
         <!-- AWS SDK for KMS -->
         <dependency>

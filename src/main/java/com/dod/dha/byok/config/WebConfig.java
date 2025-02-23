@@ -9,12 +9,12 @@ public class WebConfig implements WebMvcConfigurer {
     @Autowired
     private RequestInterceptor requestInterceptor;
 //    @Autowired
-    private NonceInterceptor nonceInterceptor;
+//    private NonceInterceptor nonceInterceptor;
 
     @Override
     public void addInterceptors(@SuppressWarnings("null") InterceptorRegistry registry) {
         registry.addInterceptor(requestInterceptor);
-        registry.addInterceptor(nonceInterceptor).addPathPatterns("/**"); // Apply to all endpoints
+  //      registry.addInterceptor(nonceInterceptor).addPathPatterns("/**"); // Apply to all endpoints
     }
 
 }

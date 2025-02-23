@@ -1,0 +1,700 @@
+2025-02-23 01:59:07,765 INFO  [main] com.dod.dha.byok.ByokApplication : Starting ByokApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 16356 (/home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 01:59:07,778 DEBUG [main] com.dod.dha.byok.ByokApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 01:59:07,779 INFO  [main] com.dod.dha.byok.ByokApplication : The following 1 profile is active: "errorhandling"
+2025-02-23 01:59:11,528 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 01:59:11,537 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 01:59:11,624 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 Redis repository interfaces.
+2025-02-23 01:59:13,399 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 01:59:13,401 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 01:59:13,403 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-02-23 01:59:13,458 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8443 (http)
+2025-02-23 01:59:13,490 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-23 01:59:13,492 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-23 01:59:13,593 WARN  [main] org.apache.catalina.util.SessionIdGeneratorBase : The default SHA1PRNG algorithm for SecureRandom is not supported by this JVM. Using the platform default.
+2025-02-23 01:59:13,635 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-23 01:59:13,636 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5682 ms
+2025-02-23 01:59:14,758 DEBUG [main] org.springframework.web.filter.ServerHttpObservationFilter : Filter 'webMvcObservationFilter' configured for use
+2025-02-23 01:59:17,526 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 01:59:17,748 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 01:59:20,165 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 01:59:21,250 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 01:59:21,847 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 01:59:21,860 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 01:59:21,865 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 01:59:21,878 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 01:59:21,880 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 01:59:21,886 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 01:59:21,887 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 01:59:21,887 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 01:59:21,897 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 01:59:22,130 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 01:59:22,144 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 01:59:22,148 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 01:59:22,148 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 01:59:22,149 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 01:59:22,150 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 01:59:22,378 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 01:59:22,507 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 01:59:23,604 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8443 (http) with context path '/'
+2025-02-23 01:59:23,644 INFO  [main] com.dod.dha.byok.ByokApplication : Started ByokApplication in 17.558 seconds (process running for 19.11)
+2025-02-23 02:00:09,844 INFO  [SpringApplicationShutdownHook] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-23 02:00:09,862 INFO  [tomcat-shutdown] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-23 02:03:59,329 INFO  [main] com.dod.dha.byok.ByokApplication : Starting ByokApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 16484 (/home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 02:03:59,336 DEBUG [main] com.dod.dha.byok.ByokApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 02:03:59,342 INFO  [main] com.dod.dha.byok.ByokApplication : The following 1 profile is active: "errorhandling"
+2025-02-23 02:04:03,178 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 02:04:03,182 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 02:04:03,270 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 0 Redis repository interfaces.
+2025-02-23 02:04:05,131 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 02:04:05,132 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 02:04:05,133 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-02-23 02:04:05,184 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8443 (http)
+2025-02-23 02:04:05,222 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-23 02:04:05,223 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-23 02:04:05,316 WARN  [main] org.apache.catalina.util.SessionIdGeneratorBase : The default SHA1PRNG algorithm for SecureRandom is not supported by this JVM. Using the platform default.
+2025-02-23 02:04:05,352 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-23 02:04:05,352 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5825 ms
+2025-02-23 02:04:06,489 DEBUG [main] org.springframework.web.filter.ServerHttpObservationFilter : Filter 'webMvcObservationFilter' configured for use
+2025-02-23 02:04:09,150 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 02:04:09,368 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 02:04:11,756 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 02:04:12,813 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 02:04:13,292 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 02:04:13,305 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 02:04:13,306 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 02:04:13,312 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 02:04:13,318 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 02:04:13,322 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 02:04:13,324 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 02:04:13,325 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 02:04:13,333 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 02:04:13,651 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 02:04:13,658 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 02:04:13,662 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 02:04:13,663 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 02:04:13,664 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 02:04:13,664 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 02:04:13,849 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 02:04:14,010 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 02:04:15,009 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8443 (http) with context path '/'
+2025-02-23 02:04:15,053 INFO  [main] com.dod.dha.byok.ByokApplication : Started ByokApplication in 17.488 seconds (process running for 19.016)
+2025-02-23 04:16:26,022 INFO  [SpringApplicationShutdownHook] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-23 04:16:26,039 INFO  [tomcat-shutdown] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-23 15:44:40,662 INFO  [main] com.dod.dha.byok.ByokApplication : Starting ByokApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 18491 (/home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 15:44:40,668 DEBUG [main] com.dod.dha.byok.ByokApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 15:44:40,671 INFO  [main] com.dod.dha.byok.ByokApplication : The following 1 profile is active: "errorhandling"
+2025-02-23 15:44:44,294 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 15:44:44,300 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 15:44:44,379 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2025-02-23 15:44:46,270 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 15:44:46,270 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 15:44:46,272 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-02-23 15:44:46,325 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8443 (http)
+2025-02-23 15:44:46,355 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-23 15:44:46,356 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-23 15:44:46,448 WARN  [main] org.apache.catalina.util.SessionIdGeneratorBase : The default SHA1PRNG algorithm for SecureRandom is not supported by this JVM. Using the platform default.
+2025-02-23 15:44:46,482 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-23 15:44:46,482 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5655 ms
+2025-02-23 15:44:47,583 DEBUG [main] org.springframework.web.filter.ServerHttpObservationFilter : Filter 'webMvcObservationFilter' configured for use
+2025-02-23 15:44:50,444 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 15:44:50,708 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 15:44:53,208 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 15:44:54,214 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 15:44:54,705 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 15:44:54,719 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 15:44:54,724 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 15:44:54,733 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 15:44:54,737 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 15:44:54,741 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 15:44:54,745 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 15:44:54,746 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 15:44:54,755 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 15:44:55,070 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 15:44:55,079 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 15:44:55,086 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 15:44:55,087 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 15:44:55,087 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 15:44:55,087 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 15:44:55,291 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 15:44:55,432 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 15:44:56,496 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8443 (http) with context path '/'
+2025-02-23 15:44:56,539 INFO  [main] com.dod.dha.byok.ByokApplication : Started ByokApplication in 17.512 seconds (process running for 19.055)
+2025-02-23 15:55:25,392 INFO  [SpringApplicationShutdownHook] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-23 15:55:25,413 INFO  [tomcat-shutdown] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-23 15:55:42,468 INFO  [main] com.dod.dha.byok.ByokApplication : Starting ByokApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 18610 (/home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 15:55:42,477 DEBUG [main] com.dod.dha.byok.ByokApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 15:55:42,479 INFO  [main] com.dod.dha.byok.ByokApplication : The following 1 profile is active: "errorhandling"
+2025-02-23 15:55:46,159 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 15:55:46,166 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 15:55:46,247 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 Redis repository interfaces.
+2025-02-23 15:55:48,145 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 15:55:48,149 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 15:55:48,150 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-02-23 15:55:48,198 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8443 (http)
+2025-02-23 15:55:48,231 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-23 15:55:48,232 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-23 15:55:48,327 WARN  [main] org.apache.catalina.util.SessionIdGeneratorBase : The default SHA1PRNG algorithm for SecureRandom is not supported by this JVM. Using the platform default.
+2025-02-23 15:55:48,365 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-23 15:55:48,366 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5735 ms
+2025-02-23 15:55:49,579 DEBUG [main] org.springframework.web.filter.ServerHttpObservationFilter : Filter 'webMvcObservationFilter' configured for use
+2025-02-23 15:55:52,210 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 15:55:52,465 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 15:55:54,908 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 15:55:55,915 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 15:55:56,431 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 15:55:56,442 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 15:55:56,447 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 15:55:56,456 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 15:55:56,458 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 15:55:56,463 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 15:55:56,464 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 15:55:56,464 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 15:55:56,475 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 15:55:56,732 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 15:55:56,747 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 15:55:56,748 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 15:55:56,749 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 15:55:56,750 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 15:55:56,751 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 15:55:56,973 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 15:55:57,140 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 15:55:58,264 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8443 (http) with context path '/'
+2025-02-23 15:55:58,309 INFO  [main] com.dod.dha.byok.ByokApplication : Started ByokApplication in 17.483 seconds (process running for 18.993)
+2025-02-23 15:56:05,897 INFO  [http-nio-8443-exec-1] org.apache.coyote.http11.Http11Processor : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x01!0x010x000x010x1d0x030x03f0xf50xd60x02O0x9bqUK0xd30xb50xca20xc10x9cp0x1f0xfe0x950x9d0xaew0x89M0xab0xdc0xde0x950x1anWX ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-02-23 15:56:23,601 INFO  [http-nio-8443-exec-3] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-23 15:56:23,601 INFO  [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-23 15:56:23,602 DEBUG [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-23 15:56:23,603 DEBUG [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-23 15:56:23,607 DEBUG [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-23 15:56:23,609 DEBUG [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3937a2d0
+2025-02-23 15:56:23,610 DEBUG [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4315cf96
+2025-02-23 15:56:23,616 DEBUG [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-23 15:56:23,617 INFO  [http-nio-8443-exec-3] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 15 ms
+2025-02-23 16:05:41,401 INFO  [SpringApplicationShutdownHook] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-23 16:05:41,414 INFO  [tomcat-shutdown] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-23 16:33:29,907 WARN  [main] org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/ec2-user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/ec2-user/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-02-23 16:33:29,945 INFO  [main] com.dod.dha.byok.BYOKControllerTest : Starting BYOKControllerTest using Java 17.0.14 with PID 18972 (started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 16:33:29,950 DEBUG [main] com.dod.dha.byok.BYOKControllerTest : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 16:33:29,951 INFO  [main] com.dod.dha.byok.BYOKControllerTest : No active profile set, falling back to 1 default profile: "default"
+2025-02-23 16:33:29,988 DEBUG [main] org.springframework.web.context.support.GenericWebApplicationContext : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@488b50ec
+2025-02-23 16:33:31,992 INFO  [main] org.springframework.boot.test.mock.web.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-23 16:33:31,996 INFO  [main] org.springframework.test.web.servlet.TestDispatcherServlet : Initializing Servlet ''
+2025-02-23 16:33:32,107 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2025-02-23 16:33:32,287 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: none
+2025-02-23 16:33:32,390 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: none
+2025-02-23 16:33:32,415 INFO  [main] org.springframework.test.web.servlet.TestDispatcherServlet : Completed initialization in 418 ms
+2025-02-23 16:33:32,661 INFO  [main] com.dod.dha.byok.BYOKControllerTest : Started BYOKControllerTest in 3.642 seconds (process running for 5.648)
+2025-02-23 16:33:34,173 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.ByokApplicationTests]: ByokApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:33:34,312 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.ByokApplicationTests
+2025-02-23 16:33:34,327 INFO  [main] org.springframework.boot.devtools.restart.RestartApplicationListener : Restart disabled due to context in which it is running
+2025-02-23 16:33:34,416 WARN  [main] org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/ec2-user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/ec2-user/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-02-23 16:33:34,423 INFO  [main] com.dod.dha.byok.ByokApplicationTests : Starting ByokApplicationTests using Java 17.0.14 with PID 18972 (started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 16:33:34,424 DEBUG [main] com.dod.dha.byok.ByokApplicationTests : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 16:33:34,424 INFO  [main] com.dod.dha.byok.ByokApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-02-23 16:33:34,440 DEBUG [main] org.springframework.web.context.support.GenericWebApplicationContext : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4a0c3aa8
+2025-02-23 16:33:36,258 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:33:36,266 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 16:33:36,325 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2025-02-23 16:33:37,761 WARN  [main] com.amazonaws.util.VersionInfoUtils : The AWS SDK for Java 1.x entered maintenance mode starting July 31, 2024 and will reach end of support on December 31, 2025. For more information, see https://aws.amazon.com/blogs/developer/the-aws-sdk-for-java-1-x-is-in-maintenance-mode-effective-july-31-2024/
+You can print where on the file system the AWS SDK for Java 1.x core runtime is located by setting the AWS_JAVA_V1_PRINT_LOCATION environment variable or aws.java.v1.printLocation system property to 'true'.
+This message can be disabled by setting the AWS_JAVA_V1_DISABLE_DEPRECATION_ANNOUNCEMENT environment variable or aws.java.v1.disableDeprecationAnnouncement system property to 'true'.
+The AWS SDK for Java 1.x is being used here:
+at java.base/java.lang.Thread.getStackTrace(Thread.java:1619)
+at com.amazonaws.util.VersionInfoUtils.printDeprecationAnnouncement(VersionInfoUtils.java:81)
+at com.amazonaws.util.VersionInfoUtils.<clinit>(VersionInfoUtils.java:59)
+at com.amazonaws.ClientConfiguration.<clinit>(ClientConfiguration.java:95)
+at com.amazonaws.ClientConfigurationFactory.getDefaultConfig(ClientConfigurationFactory.java:46)
+at com.amazonaws.ClientConfigurationFactory.getConfig(ClientConfigurationFactory.java:36)
+at com.amazonaws.client.builder.AwsClientBuilder.resolveClientConfiguration(AwsClientBuilder.java:169)
+at com.amazonaws.client.builder.AwsClientBuilder.access$000(AwsClientBuilder.java:54)
+at com.amazonaws.client.builder.AwsClientBuilder$SyncBuilderParams.<init>(AwsClientBuilder.java:505)
+at com.amazonaws.client.builder.AwsClientBuilder.getSyncClientParams(AwsClientBuilder.java:441)
+at com.amazonaws.client.builder.AwsSyncClientBuilder.build(AwsSyncClientBuilder.java:46)
+at com.dod.dha.byok.KmsService.<init>(KmsService.java:32)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196)
+at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-23 16:33:38,895 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 16:33:39,009 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 16:33:41,127 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 16:33:42,145 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 16:33:42,566 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 16:33:42,575 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 16:33:42,576 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 16:33:42,584 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 16:33:42,589 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 16:33:42,589 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 16:33:42,590 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 16:33:42,590 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 16:33:42,597 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 16:33:42,738 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 16:33:42,747 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 16:33:42,747 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 16:33:42,748 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 16:33:42,750 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 16:33:42,750 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 16:33:42,900 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 16:33:42,950 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 16:33:43,933 INFO  [main] com.dod.dha.byok.ByokApplicationTests : Started ByokApplicationTests in 9.607 seconds (process running for 16.92)
+2025-02-23 16:33:44,106 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.FipsAesCbcTest]: FipsAesCbcTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:33:44,118 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.FipsAesCbcTest
+2025-02-23 16:33:44,208 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.FipsTest]: FipsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:33:44,216 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.FipsTest
+2025-02-23 16:33:44,539 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.UnlimitedCryptoPoliciesCheckTest]: UnlimitedCryptoPoliciesCheckTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:33:44,543 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.UnlimitedCryptoPoliciesCheckTest
+2025-02-23 16:33:44,641 DEBUG [SpringApplicationShutdownHook] org.springframework.web.context.support.GenericWebApplicationContext : Closing org.springframework.web.context.support.GenericWebApplicationContext@488b50ec, started on Sun Feb 23 16:33:29 UTC 2025
+2025-02-23 16:33:44,645 DEBUG [SpringApplicationShutdownHook] org.springframework.web.context.support.GenericWebApplicationContext : Closing org.springframework.web.context.support.GenericWebApplicationContext@4a0c3aa8, started on Sun Feb 23 16:33:34 UTC 2025
+2025-02-23 16:34:59,424 WARN  [main] org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/ec2-user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/ec2-user/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-02-23 16:34:59,455 INFO  [main] com.dod.dha.byok.BYOKControllerTest : Starting BYOKControllerTest using Java 17.0.14 with PID 19120 (started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 16:34:59,460 DEBUG [main] com.dod.dha.byok.BYOKControllerTest : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 16:34:59,463 INFO  [main] com.dod.dha.byok.BYOKControllerTest : No active profile set, falling back to 1 default profile: "default"
+2025-02-23 16:34:59,485 DEBUG [main] org.springframework.web.context.support.GenericWebApplicationContext : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@488b50ec
+2025-02-23 16:35:01,564 INFO  [main] org.springframework.boot.test.mock.web.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-23 16:35:01,570 INFO  [main] org.springframework.test.web.servlet.TestDispatcherServlet : Initializing Servlet ''
+2025-02-23 16:35:01,682 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 2 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2025-02-23 16:35:01,885 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: none
+2025-02-23 16:35:02,000 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: none
+2025-02-23 16:35:02,026 INFO  [main] org.springframework.test.web.servlet.TestDispatcherServlet : Completed initialization in 456 ms
+2025-02-23 16:35:02,276 INFO  [main] com.dod.dha.byok.BYOKControllerTest : Started BYOKControllerTest in 3.713 seconds (process running for 5.88)
+2025-02-23 16:35:03,690 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.ByokApplicationTests]: ByokApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:35:03,835 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.ByokApplicationTests
+2025-02-23 16:35:03,843 INFO  [main] org.springframework.boot.devtools.restart.RestartApplicationListener : Restart disabled due to context in which it is running
+2025-02-23 16:35:03,928 WARN  [main] org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/ec2-user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/ec2-user/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-02-23 16:35:03,934 INFO  [main] com.dod.dha.byok.ByokApplicationTests : Starting ByokApplicationTests using Java 17.0.14 with PID 19120 (started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 16:35:03,935 DEBUG [main] com.dod.dha.byok.ByokApplicationTests : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 16:35:03,935 INFO  [main] com.dod.dha.byok.ByokApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2025-02-23 16:35:03,953 DEBUG [main] org.springframework.web.context.support.GenericWebApplicationContext : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5bf523e3
+2025-02-23 16:35:05,776 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:35:05,784 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 16:35:05,858 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2025-02-23 16:35:07,293 WARN  [main] com.amazonaws.util.VersionInfoUtils : The AWS SDK for Java 1.x entered maintenance mode starting July 31, 2024 and will reach end of support on December 31, 2025. For more information, see https://aws.amazon.com/blogs/developer/the-aws-sdk-for-java-1-x-is-in-maintenance-mode-effective-july-31-2024/
+You can print where on the file system the AWS SDK for Java 1.x core runtime is located by setting the AWS_JAVA_V1_PRINT_LOCATION environment variable or aws.java.v1.printLocation system property to 'true'.
+This message can be disabled by setting the AWS_JAVA_V1_DISABLE_DEPRECATION_ANNOUNCEMENT environment variable or aws.java.v1.disableDeprecationAnnouncement system property to 'true'.
+The AWS SDK for Java 1.x is being used here:
+at java.base/java.lang.Thread.getStackTrace(Thread.java:1619)
+at com.amazonaws.util.VersionInfoUtils.printDeprecationAnnouncement(VersionInfoUtils.java:81)
+at com.amazonaws.util.VersionInfoUtils.<clinit>(VersionInfoUtils.java:59)
+at com.amazonaws.ClientConfiguration.<clinit>(ClientConfiguration.java:95)
+at com.amazonaws.ClientConfigurationFactory.getDefaultConfig(ClientConfigurationFactory.java:46)
+at com.amazonaws.ClientConfigurationFactory.getConfig(ClientConfigurationFactory.java:36)
+at com.amazonaws.client.builder.AwsClientBuilder.resolveClientConfiguration(AwsClientBuilder.java:169)
+at com.amazonaws.client.builder.AwsClientBuilder.access$000(AwsClientBuilder.java:54)
+at com.amazonaws.client.builder.AwsClientBuilder$SyncBuilderParams.<init>(AwsClientBuilder.java:505)
+at com.amazonaws.client.builder.AwsClientBuilder.getSyncClientParams(AwsClientBuilder.java:441)
+at com.amazonaws.client.builder.AwsSyncClientBuilder.build(AwsSyncClientBuilder.java:46)
+at com.dod.dha.byok.KmsService.<init>(KmsService.java:32)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196)
+at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-02-23 16:35:08,496 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 16:35:08,602 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 16:35:10,811 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 16:35:11,823 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 16:35:12,261 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 16:35:12,270 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 16:35:12,270 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 16:35:12,281 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 16:35:12,282 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 16:35:12,282 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 16:35:12,284 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 16:35:12,288 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 16:35:12,291 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 16:35:12,434 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 16:35:12,441 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 16:35:12,446 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 16:35:12,448 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 16:35:12,449 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 16:35:12,450 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 16:35:12,608 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 16:35:12,647 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 16:35:13,634 INFO  [main] com.dod.dha.byok.ByokApplicationTests : Started ByokApplicationTests in 9.79 seconds (process running for 17.238)
+2025-02-23 16:35:13,806 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.FipsAesCbcTest]: FipsAesCbcTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:35:13,811 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.FipsAesCbcTest
+2025-02-23 16:35:13,929 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.FipsTest]: FipsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:35:13,934 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.FipsTest
+2025-02-23 16:35:14,264 INFO  [main] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.dod.dha.byok.UnlimitedCryptoPoliciesCheckTest]: UnlimitedCryptoPoliciesCheckTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-23 16:35:14,269 INFO  [main] org.springframework.boot.test.context.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.dod.dha.byok.ByokApplication for test class com.dod.dha.byok.UnlimitedCryptoPoliciesCheckTest
+2025-02-23 16:35:14,378 DEBUG [SpringApplicationShutdownHook] org.springframework.web.context.support.GenericWebApplicationContext : Closing org.springframework.web.context.support.GenericWebApplicationContext@488b50ec, started on Sun Feb 23 16:34:59 UTC 2025
+2025-02-23 16:35:14,389 DEBUG [SpringApplicationShutdownHook] org.springframework.web.context.support.GenericWebApplicationContext : Closing org.springframework.web.context.support.GenericWebApplicationContext@5bf523e3, started on Sun Feb 23 16:35:03 UTC 2025
+2025-02-23 16:35:38,399 INFO  [main] com.dod.dha.byok.ByokApplication : Starting ByokApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 19225 (/home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar started by ec2-user in /home/ec2-user/verify/byok)
+2025-02-23 16:35:38,409 DEBUG [main] com.dod.dha.byok.ByokApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-23 16:35:38,411 INFO  [main] com.dod.dha.byok.ByokApplication : The following 1 profile is active: "errorhandling"
+2025-02-23 16:35:42,205 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:35:42,209 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 16:35:42,298 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+2025-02-23 16:35:44,020 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 16:35:44,021 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : Code archive: /home/ec2-user/verify/byok/target/byok-0.0.1-SNAPSHOT.jar
+2025-02-23 16:35:44,024 DEBUG [main] com.dod.dha.byok.config.AprConfig$1 : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-02-23 16:35:44,071 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8443 (http)
+2025-02-23 16:35:44,111 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-23 16:35:44,112 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-23 16:35:44,199 WARN  [main] org.apache.catalina.util.SessionIdGeneratorBase : The default SHA1PRNG algorithm for SecureRandom is not supported by this JVM. Using the platform default.
+2025-02-23 16:35:44,236 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-23 16:35:44,241 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5668 ms
+2025-02-23 16:35:45,326 DEBUG [main] org.springframework.web.filter.ServerHttpObservationFilter : Filter 'webMvcObservationFilter' configured for use
+2025-02-23 16:35:46,277 WARN  [main] com.amazonaws.util.VersionInfoUtils : The AWS SDK for Java 1.x entered maintenance mode starting July 31, 2024 and will reach end of support on December 31, 2025. For more information, see https://aws.amazon.com/blogs/developer/the-aws-sdk-for-java-1-x-is-in-maintenance-mode-effective-july-31-2024/
+You can print where on the file system the AWS SDK for Java 1.x core runtime is located by setting the AWS_JAVA_V1_PRINT_LOCATION environment variable or aws.java.v1.printLocation system property to 'true'.
+This message can be disabled by setting the AWS_JAVA_V1_DISABLE_DEPRECATION_ANNOUNCEMENT environment variable or aws.java.v1.disableDeprecationAnnouncement system property to 'true'.
+The AWS SDK for Java 1.x is being used here:
+at java.base/java.lang.Thread.getStackTrace(Thread.java:1619)
+at com.amazonaws.util.VersionInfoUtils.printDeprecationAnnouncement(VersionInfoUtils.java:81)
+at com.amazonaws.util.VersionInfoUtils.<clinit>(VersionInfoUtils.java:59)
+at com.amazonaws.ClientConfiguration.<clinit>(ClientConfiguration.java:95)
+at com.amazonaws.ClientConfigurationFactory.getDefaultConfig(ClientConfigurationFactory.java:46)
+at com.amazonaws.ClientConfigurationFactory.getConfig(ClientConfigurationFactory.java:36)
+at com.amazonaws.client.builder.AwsClientBuilder.resolveClientConfiguration(AwsClientBuilder.java:169)
+at com.amazonaws.client.builder.AwsClientBuilder.access$000(AwsClientBuilder.java:54)
+at com.amazonaws.client.builder.AwsClientBuilder$SyncBuilderParams.<init>(AwsClientBuilder.java:505)
+at com.amazonaws.client.builder.AwsClientBuilder.getSyncClientParams(AwsClientBuilder.java:441)
+at com.amazonaws.client.builder.AwsSyncClientBuilder.build(AwsSyncClientBuilder.java:46)
+at com.dod.dha.byok.KmsService.<init>(KmsService.java:32)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196)
+at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+at com.dod.dha.byok.ByokApplication.main(ByokApplication.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+2025-02-23 16:35:47,731 INFO  [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2025-02-23 16:35:47,932 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-02-23 16:35:49,909 DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-23 16:35:50,937 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-23 16:35:51,481 DEBUG [main] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2025-02-23 16:35:51,492 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2025-02-23 16:35:51,497 DEBUG [main] org.hibernate.validator.internal.engine.AbstractConfigurationImpl : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2025-02-23 16:35:51,502 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2025-02-23 16:35:51,507 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via user class loader
+2025-02-23 16:35:51,508 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via TCCL
+2025-02-23 16:35:51,512 DEBUG [main] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2025-02-23 16:35:51,513 DEBUG [main] org.hibernate.validator.internal.xml.config.ValidationXmlParser : No META-INF/validation.xml found. Using annotation based configuration only.
+2025-02-23 16:35:51,518 DEBUG [main] org.hibernate.validator.internal.engine.resolver.TraversableResolvers : Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2025-02-23 16:35:51,731 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2025-02-23 16:35:51,745 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2025-02-23 16:35:51,747 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2025-02-23 16:35:51,752 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2025-02-23 16:35:51,752 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2025-02-23 16:35:51,752 DEBUG [main] org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2025-02-23 16:35:51,943 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-23 16:35:52,068 DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-23 16:35:53,127 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8443 (http) with context path '/'
+2025-02-23 16:35:53,171 INFO  [main] com.dod.dha.byok.ByokApplication : Started ByokApplication in 16.421 seconds (process running for 17.941)
+2025-02-23 16:50:30,168 INFO  [SpringApplicationShutdownHook] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-23 16:50:30,187 INFO  [tomcat-shutdown] org.springframework.boot.web.embedded.tomcat.GracefulShutdown : Graceful shutdown complete
